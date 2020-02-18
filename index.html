@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/main.css">
+  <title>CV</title>
+</head>
+
+<body>
+  <div class="content">
+    <h1>Resume</h1>
+    <p>
+      First Name: Mikhail<br>
+      Last Name: Nikulenko
+    </p>
+    <h2>Contact Info</h2>
+    <p>
+      email: nklnkm@yandex.ru
+    </p>
+    <h2>Summary</h2>
+    <p>
+      I like the development. It is interesting to learn something new. But it is important that this can be put into practice and to do something useful, especially when the task is interesting. It's not hard for me to write code and be interested in the details. I am interested in inventing new things. I am also interested in art and beautiful things. I think that everything should be beautiful and comfortable in all areas of activity. And I think I can make something more comfortable, useful and beautiful.
+    </p>
+    <h2>Skills</h2>
+    <p>
+      <ul>
+        <li>JavaScript / HTML / CSS</li>
+        <li>Delphi</li>
+        <li>Git</li>
+      </ul>
+    </p>
+    <h2>Code examples</h2>
+    <p>
+      javascript
+      <pre>
+        //set card (rectangular area on page) coordinates relative to cursor position
+        function setCardXY (eventObj) {
+          let mousePageX = eventObj.pageX,//cursor in document (включая скролл)
+          mousePageY = eventObj.pageY,
+          mouseX = eventObj.clientX,//cursor in window
+          mouseY = eventObj.clientY,
+          clientWidthX = doc.documentElement.clientWidth,//window size
+          clientHeightY = doc.documentElement.clientHeight,
+          cardWidthX = parseInt(newCard.card.style.width, 10),
+          cardHeightY = parseInt(newCard.card.style.height, 10);
+          // draw card by X
+          // to middle
+          if ((mouseX + cardWidthX > clientWidthX) && (mouseX < cardWidthX)) {
+            newCard.card.style.left = 5 + mousePageX + 'px';
+          }
+          // right
+          else if (mouseX + cardWidthX <= clientWidthX) {
+            newCard.card.style.left = 5 + mousePageX + 'px';
+          }
+          // left
+          else if (mouseX + cardWidthX >= clientWidthX) {
+            newCard.card.style.left = mousePageX - cardWidthX - 5 + 'px';//уточнить 9-ку
+          };
+          // draw card by Y
+          // to middle
+          if ((mouseY + cardHeightY > clientHeightY) && (mouseY < cardHeightY)) {
+            newCard.card.style.top = 5 + mousePageY + 'px';//уточнить 9-ку
+          }
+          // bottom
+          else if (mouseY + cardHeightY <= clientHeightY) {
+            newCard.card.style.top = 5 + mousePageY + 'px';
+          }    
+          // top
+          else if (mouseY + cardHeightY > clientHeightY) {
+            newCard.card.style.top = mousePageY - cardHeightY - 5 + 'px';//уточнить 9-ку
+          };
+        };
+      </pre>
+    </p>
+    <h2>Experience</h2>
+    <p>
+      Industrial control system engineer (SCADA development)
+    </p>
+    <h2>Education</h2>
+    <p>
+      Saratov State University (Quality engineer)
+    </p>
+    <h2>English</h2>
+    <p>
+      Pre-Intermediate
+    </p>
+  </div>
+</body>
+
+</html>
