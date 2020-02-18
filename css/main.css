@@ -1,3 +1,7 @@
+body {
+  background-color: #232b25;
+}
+
 .content {  
   width: 900px;
   margin: 0 auto;
@@ -11,8 +15,4 @@
 
 .code-example{
   background-color: #ececec;
-}
-
-body {
-  background-color: #232b25;
 }
