@@ -1,0 +1,18 @@
+body {
+  background-color: #232b25;
+}
+
+.content {  
+  width: 900px;
+  margin: 0 auto;
+  padding: 25px;  
+  background-color: #e3e9e6;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.code-example{
+  background-color: #ececec;
+}
